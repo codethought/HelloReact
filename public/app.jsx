@@ -29,7 +29,7 @@ var GreeterForm = React.createClass({
             this.props.onNewMessage(message);
         }
     },
-    render: function () {
+    render: function() {
         return (
             <form onSubmit={this.onFormSubmit}>
               <div>
@@ -75,7 +75,6 @@ var Greeter = React.createClass({
 
         return (
             <div>
-
                 <GreeterMessage name={name} message={message}/>
                 <GreeterForm onNewName={this.handleNewName} onNewMessage={this.handleNewMessage}/>
             </div>
